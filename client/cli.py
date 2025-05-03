@@ -173,7 +173,7 @@ def main():
     ocr_parser.add_argument('--disable_ocr_cache', default=False, action='store_true', help='Disable OCR result caching')
     ocr_parser.add_argument('--prompt', type=str, default=None, help='Prompt used for the Ollama model to fix or transform the file')
     ocr_parser.add_argument('--prompt_file', default=None, type=str, help='Prompt file name used for the Ollama model to fix or transform the file')
-    ocr_parser.add_argument('--model', type=str, default='llama3.1', help='Model to use for the Ollama endpoint')
+    ocr_parser.add_argument('--model', type=str, default='llama3.2-vision', help='Model to use for the Ollama endpoint')
     ocr_parser.add_argument('--strategy', type=str, default='llama_vision', help='OCR strategy to use for the file')
     ocr_parser.add_argument('--print_progress', default=True, action='store_true', help='Print the progress of the OCR task')
     ocr_parser.add_argument('--storage_profile', type=str, default='default', help='Storage profile to use for the file')
